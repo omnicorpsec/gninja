@@ -22,7 +22,7 @@ completion =
         spellobj.clean
 
       when Readline.line_buffer =~ /merchant_site.*/i
-        require "/Users/newjo/docker-nginx/html/start_clone.rb"
+        require "~/docker-nginx/html/start_clone.rb"
         puts "commence showing off"
         showoff = Dockx.new
         showoff.start
