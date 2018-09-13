@@ -19,7 +19,7 @@ class SpellObj
   end
 #kalibox with sendemail and omni-git MAILER DEMON
   def whisper_mailerDemon
-    system "docker run -dit --name 'md-v0.2' md-v0.2:latest /bin/bash"
+    system "docker run -dit --name 'md-v0.3' md-v0.3:latest /bin/bash"
   end
 
   def grab_kali
@@ -69,7 +69,7 @@ class SpellObj
 
 #this stops and destroys all the containers
   #
-  def clean
+  def cleansingWind
     system "ruby uncasting.rb"
   end
   #########################
