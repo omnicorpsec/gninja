@@ -10,22 +10,19 @@ class MailerDemon
     puts "carefully, very carefully enter the Title of this Demon Cast"
     u = gets.chomp
 
-    puts "Now, create the meat of this Demon Cast from the very ether!!! FILL THE BODY OF THE MESSAGE!!!: "
+    puts "Now, create the meat of this Demon Cast from the very ether!!! FILL THE BODY OF THE MESSAGE!!!:"
     m = gets.chomp
-
-    puts "now put it like this >>>>>>>smtpServerInfo:PORT<<<<<<< Do not fuck this up: "
+    puts "now put it like this >>>>>>>smtpServerInfo:PORT<<<<<<< Do not fuck this up:"
     s = gets.chomp
-
-    puts "next come the logins for whatever smtp server you are using so first USERNAME: "
+    #then edit out the local variable calls for xu and xp.  
+    puts "next come the logins for whatever smtp server you are using so first USERNAME:"
     xu = gets.chomp
 
-    puts "PASSWORD: "
+    puts "PASSWORD:"
     xp = gets.chomp
 
     puts "We Have a MailerDemon DemonCast!!"
     puts "we are sending an email from #{f} to #{t} with a title saying #{u} a message saying #{m} from #{s} with the creds #{xu} and #{xp}, if that doesn't sound right...too bad.  This is Demon Casting "
     system "sendemail -f #{f} -t #{t} -u #{u} -m #{m} -s #{s} -xu #{xu} -xp #{xp}"
   end
-
-    
-
+end
